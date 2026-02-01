@@ -1,5 +1,6 @@
 "use client";
 import { projects, team } from "@/data/projects";
+import { socials } from "@/data/socials";
 import Link from "next/link";
 import Navbar from "@/components/layout/Navbar";
 import PixelBracket from "@/components/ui/PixelBracket";
@@ -51,8 +52,21 @@ export default function Home() {
       </main>
 
       {/* FOOTER */}
-      <footer className="mt-20 text-gray-600 text-sm font-mono text-center">
-        <p>Buidlers Bolivia © 2026. All systems operational.</p>
+      <footer className="w-full max-w-5xl mx-auto border-t border-gray-800 mt-20 py-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm font-mono">
+        <p>Buidlers Bolivia © 2026. System Online.</p>
+
+        <div className="flex gap-4 mt-4 md:mt-0">
+          {socials.map((social) => (
+            <a
+              key={social.name}
+              href={social.url}
+              target="_blank"
+              className="hover:text-buidlers-yellow hover:underline decoration-wavy underline-offset-4"
+            >
+              {social.name.toLowerCase()}
+            </a>
+          ))}
+        </div>
       </footer>
     </div>
   );

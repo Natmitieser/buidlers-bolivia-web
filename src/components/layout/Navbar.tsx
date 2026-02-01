@@ -17,6 +17,9 @@ export default function Navbar() {
                     <Link href="/equipo" className="text-gray-400 hover:text-buidlers-yellow hover:underline decoration-buidlers-yellow underline-offset-4 transition-all">
                         ./equipo
                     </Link>
+                    <Link href="/links" className="text-buidlers-yellow hover:underline underline-offset-4 transition-all font-bold animate-pulse">
+                        [./ENLACES]
+                    </Link>
                 </div>
             </div>
         </nav>
