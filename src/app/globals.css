@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  /* Aquí definimos tus colores personalizados */
+  --color-buidlers-yellow: #FFC800;
+  --color-buidlers-black: #0a0a0a;
+  --color-buidlers-gray: #1a1a1a;
+
+  /* Agrega esto: */
+  --font-title: var(--font-title);
+  --font-body: var(--font-body);
+}
+
+/* Configuración del modo oscuro y fuente base */
+:root {
+  background-color: var(--color-buidlers-black);
+  color: #ededed;
+  font-family: Arial, Helvetica, sans-serif;
+  /* Ya buscaremos una tipo 'terminal' luego */
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
